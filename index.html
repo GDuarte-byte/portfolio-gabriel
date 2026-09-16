@@ -26,6 +26,7 @@
 
       <div class="nav-links" id="nav-links">
         <a href="#sobre">Sobre</a>
+        <a href="#destaques">Destaques</a>
         <a href="#projetos">Projetos</a>
         <a href="#habilidades">Habilidades</a>
         <a href="#trajetoria">Trajetória</a>
@@ -45,7 +46,7 @@
           <p class="hero-description">Estudante de Análise e Desenvolvimento de Sistemas, com foco em suporte, infraestrutura, redes e cibersegurança. Disciplina para aprender, atenção para diagnosticar e iniciativa para resolver.</p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#projetos">Explorar projetos <span aria-hidden="true">↘</span></a>
+            <a class="btn btn-primary" href="#destaques">Ver impacto real <span aria-hidden="true">↘</span></a>
             <a class="btn btn-ghost" href="https://github.com/GDuarte-byte" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
           </div>
 
@@ -108,89 +109,121 @@
       </div>
     </section>
 
+    <section class="section highlights" id="destaques">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 / Destaque de impacto real</p>
+          <h2>Segurança começa por <span>pessoas informadas.</span></h2>
+        </div>
+
+        <article class="impact-case reveal">
+          <div class="impact-intro">
+            <p class="project-type">Extensão universitária • Maio de 2025</p>
+            <h3>Cibersegurança como estratégia de conscientização digital em comunidades educacionais.</h3>
+            <p>Projeto realizado no CF4S, em Penha Circular/RJ, para traduzir riscos digitais em orientações práticas e acessíveis para a comunidade educacional.</p>
+            <div class="impact-tags"><span>Phishing</span><span>Boas práticas</span><span>Comunicação</span><span>ODS 4 · 9 · 16</span></div>
+          </div>
+          <div class="impact-details">
+            <div class="case-row"><span>Desafio</span><p>Conscientizar sobre ameaças digitais com linguagem clara, aplicável no dia a dia e adequada ao público.</p></div>
+            <div class="case-row"><span>Entrega</span><p>Planejamento, slides, roteiro e formulário de avaliação para quatro encontros realizados em maio.</p></div>
+            <div class="case-row"><span>Resultado</span><p>Participação direta de 80 pessoas e ganho médio de compreensão de 47%, medido entre avaliações pré e pós-atividade.</p></div>
+          </div>
+          <div class="impact-metrics" aria-label="Métricas do projeto extensionista">
+            <div><strong data-count="80">0</strong><span>pessoas alcançadas</span></div>
+            <div><strong data-count="47">0</strong><span>% de ganho médio</span></div>
+            <div><strong data-count="4">0</strong><span>encontros realizados</span></div>
+          </div>
+          <p class="impact-note">Encontros: 02, 10, 15 e 22 de maio de 2025. Indicadores registrados no projeto extensionista.</p>
+        </article>
+      </div>
+    </section>
+
     <section class="section projects" id="projetos">
       <div class="container">
         <div class="section-heading heading-row reveal">
           <div>
-            <p class="eyebrow">02 / Projetos</p>
-            <h2>Aprendizado que virou <span>prática.</span></h2>
+            <p class="eyebrow">03 / Projetos</p>
+            <h2>Não só estudo: <span>entrega.</span></h2>
           </div>
           <a class="text-link" href="https://github.com/GDuarte-byte" target="_blank" rel="noopener noreferrer">Ver todos no GitHub ↗</a>
         </div>
 
         <div class="filter-row reveal" aria-label="Filtrar projetos">
           <button class="filter active" data-filter="all">Todos</button>
+          <button class="filter" data-filter="support">Suporte N1</button>
           <button class="filter" data-filter="infra">Infra & Redes</button>
           <button class="filter" data-filter="cyber">Cyber</button>
           <button class="filter" data-filter="dev">Desenvolvimento</button>
-          <button class="filter" data-filter="dados">Dados</button>
         </div>
 
         <div class="project-grid">
-          <article class="project-card featured reveal" data-category="infra cyber">
+          <article class="project-card featured reveal" data-category="support infra cyber dev">
             <div class="project-top">
               <span class="project-number">01</span>
-              <div class="project-links"><a href="https://github.com/GDuarte-byte/portfolio-ti-gabriel-tourinho" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto no GitHub">↗</a></div>
+              <div class="project-links"><a href="../support-n1-lab/" target="_blank" rel="noopener noreferrer" aria-label="Abrir demonstração do Support N1 Decision Lab">demo ↗</a><a href="https://github.com/GDuarte-byte/support-n1-lab" target="_blank" rel="noopener noreferrer" aria-label="Abrir código do Support N1 Decision Lab no GitHub">code ↗</a></div>
             </div>
             <div class="project-visual terminal-window" aria-hidden="true">
-              <div class="terminal-bar"><i></i><i></i><i></i><span>network-lab.sh</span></div>
-              <pre><code><span class="prompt">gabriel@lab:~$</span> ipconfig /all
-IPv4 ........: 192.168.1.10
-Gateway .....: 192.168.1.1
+              <div class="terminal-bar"><i></i><i></i><i></i><span>support-n1-lab</span></div>
+              <pre><code><span class="prompt">incidente@triagem:~$</span> analisar
+Categoria ...: conectividade / DNS
+Impacto .....: usuário bloqueado
+Prioridade ..: P2
 
-<span class="prompt">gabriel@lab:~$</span> ping gateway
-Reply: time=1ms TTL=64
-<span class="success">✓ Conectividade validada</span></code></pre>
+<span class="prompt">incidente@triagem:~$</span> plano
+01 validar escopo e adaptador
+02 coletar IP, gateway e DNS
+03 registrar e escalar com contexto
+<span class="success">✓ resumo de ticket pronto</span></code></pre>
             </div>
             <div class="project-content">
-              <p class="project-type">Infraestrutura • Redes • Cyber</p>
-              <h3>Laboratório de Redes e Cibersegurança</h3>
-              <p>Práticas de configuração de IP, diagnóstico de conectividade e aplicação de fundamentos de segurança da informação.</p>
-              <div class="tag-list"><span>TCP/IP</span><span>Ping</span><span>Tracert</span><span>Segurança</span></div>
+              <p class="project-type">Suporte N1 • Redes • Segurança</p>
+              <h3>Support N1 Decision Lab</h3>
+              <p>Ferramenta web interativa que transforma sintomas em uma sequência segura de triagem, comandos úteis, critérios de escalonamento e resumo copiável para ticket.</p>
+              <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>TCP/IP</span><span>Documentação</span></div>
             </div>
           </article>
 
           <article class="project-card reveal" data-category="infra">
-            <div class="project-top"><span class="project-number">02</span><a href="https://github.com/GDuarte-byte/portfolio-ti-gabriel-tourinho" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto no GitHub">↗</a></div>
-            <div class="project-icon pc-icon" aria-hidden="true"><span></span></div>
+            <div class="project-top"><span class="project-number">02</span><a href="https://github.com/GDuarte-byte/network-fundamentals" target="_blank" rel="noopener noreferrer" aria-label="Abrir Fundamentos de Redes no GitHub">↗</a></div>
+            <div class="project-icon network-icon" aria-hidden="true"><span></span><i></i><b></b></div>
             <div class="project-content">
-              <p class="project-type">Suporte • Hardware</p>
-              <h3>Manutenção de Computadores</h3>
-              <p>Documentação de diagnóstico, manutenção preventiva, componentes de hardware e solução de falhas em sistemas.</p>
-              <div class="tag-list"><span>Hardware</span><span>Windows</span><span>Troubleshooting</span></div>
+              <p class="project-type">Redes • Fundamentos</p>
+              <h3>Network Fundamentals</h3>
+              <p>Repositório de estudos com OSI, TCP/IP, DNS, DHCP, portas e protocolos — base organizada para atuação em redes e infraestrutura.</p>
+              <div class="tag-list"><span>OSI</span><span>TCP/IP</span><span>DNS</span><span>DHCP</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="infra cyber">
+            <div class="project-top"><span class="project-number">03</span><a href="https://github.com/GDuarte-byte/linux-labs" target="_blank" rel="noopener noreferrer" aria-label="Abrir Linux Labs no GitHub">↗</a></div>
+            <div class="project-icon linux-icon" aria-hidden="true"><span>&gt;_</span></div>
+            <div class="project-content">
+              <p class="project-type">Linux • Infraestrutura</p>
+              <h3>Linux Labs</h3>
+              <p>Laboratórios de terminal, permissões, usuários, processos, redes e troubleshooting com foco na construção de base prática para infra e cyber.</p>
+              <div class="tag-list"><span>Linux</span><span>Bash</span><span>Permissões</span><span>Processos</span></div>
             </div>
           </article>
 
           <article class="project-card reveal" data-category="cyber">
-            <div class="project-top"><span class="project-number">03</span><a href="https://github.com/GDuarte-byte/portfolio-ti-gabriel-tourinho" target="_blank" rel="noopener noreferrer" aria-label="Abrir projeto no GitHub">↗</a></div>
+            <div class="project-top"><span class="project-number">04</span><a href="https://github.com/GDuarte-byte/cybersec-notes" target="_blank" rel="noopener noreferrer" aria-label="Abrir Cybersecurity Notes no GitHub">↗</a></div>
             <div class="project-icon shield-icon" aria-hidden="true"><span>✓</span></div>
             <div class="project-content">
-              <p class="project-type">Extensão • Conscientização</p>
-              <h3>Treinamento em Cibersegurança</h3>
-              <p>Oficinas no CF4S Vila Kosmos com simulações, avaliação pré e pós-treinamento e orientações sobre ameaças digitais.</p>
-              <div class="tag-list"><span>Phishing</span><span>Boas práticas</span><span>Treinamento</span></div>
+              <p class="project-type">Cibersegurança • Estudos</p>
+              <h3>Cybersecurity Notes</h3>
+              <p>Anotações estruturadas sobre fundamentos de segurança, vulnerabilidades, ameaças, redes, protocolos e conceitos para estudo contínuo.</p>
+              <div class="tag-list"><span>Segurança</span><span>Protocolos</span><span>Linux</span><span>Notas</span></div>
             </div>
           </article>
 
-          <article class="project-card reveal" data-category="dados dev">
-            <div class="project-top"><span class="project-number">04</span><a href="https://github.com/GDuarte-byte" target="_blank" rel="noopener noreferrer" aria-label="Abrir perfil no GitHub">↗</a></div>
-            <div class="project-icon chart-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <article class="project-card reveal" data-category="dev">
+            <div class="project-top"><span class="project-number">05</span><a href="https://github.com/GDuarte-byte/portfolio-gabriel" target="_blank" rel="noopener noreferrer" aria-label="Abrir código do portfólio no GitHub">↗</a></div>
+            <div class="project-icon code-icon" aria-hidden="true"><span>&lt;/&gt;</span></div>
             <div class="project-content">
-              <p class="project-type">Dados • Dashboard</p>
-              <h3>Análise de Vendas</h3>
-              <p>Banco relacional com clientes, produtos e vendas, além de indicadores de faturamento, ticket médio e evolução.</p>
-              <div class="tag-list"><span>SQL</span><span>Power BI</span><span>Excel</span></div>
-            </div>
-          </article>
-
-          <article class="project-card reveal" data-category="dev infra">
-            <div class="project-top"><span class="project-number">05</span><a href="https://github.com/GDuarte-byte" target="_blank" rel="noopener noreferrer" aria-label="Abrir perfil no GitHub">↗</a></div>
-            <div class="project-icon signal-icon" aria-hidden="true"><i></i><i></i><i></i></div>
-            <div class="project-content">
-              <p class="project-type">IoT • Mensageria</p>
-              <h3>Comunicação MQTT com Java</h3>
-              <p>Aplicação Publisher/Subscriber em Java usando Eclipse Paho e broker MQTT para troca assíncrona de mensagens.</p>
-              <div class="tag-list"><span>Java</span><span>MQTT</span><span>Maven</span><span>IoT</span></div>
+              <p class="project-type">Front-end • Marca pessoal</p>
+              <h3>Portfólio de TI</h3>
+              <p>Site responsivo que apresenta trajetória, habilidades e projetos de forma acessível, com filtros, animações leves e conteúdo alinhado à área de TI.</p>
+              <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>UX</span></div>
             </div>
           </article>
         </div>
@@ -200,7 +233,7 @@ Reply: time=1ms TTL=64
     <section class="section skills" id="habilidades">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="eyebrow">03 / Conhecimentos</p>
+          <p class="eyebrow">04 / Conhecimentos</p>
           <h2>Ferramentas para <span>resolver.</span></h2>
         </div>
 
@@ -244,10 +277,28 @@ Reply: time=1ms TTL=64
       </div>
     </section>
 
+    <section class="section roadmap" id="em-evolucao">
+      <div class="container">
+        <div class="section-heading heading-row reveal">
+          <div>
+            <p class="eyebrow">05 / Em evolução</p>
+            <h2>Uma trilha com <span>direção.</span></h2>
+          </div>
+          <p class="roadmap-intro">Meu próximo foco é aprofundar a base prática de infraestrutura e segurança, documentando cada laboratório no GitHub.</p>
+        </div>
+        <div class="roadmap-grid">
+          <article class="roadmap-card reveal"><span class="roadmap-status">agora</span><b>01</b><h3>Linux e linha de comando</h3><p>Permissões, serviços, processos, rede e troubleshooting em laboratórios práticos.</p></article>
+          <article class="roadmap-card reveal"><span class="roadmap-status">próximo</span><b>02</b><h3>Windows Server & Active Directory</h3><p>Usuários, grupos, DNS, DHCP e políticas para compreender ambientes corporativos.</p></article>
+          <article class="roadmap-card reveal"><span class="roadmap-status">próximo</span><b>03</b><h3>Wireshark e análise de rede</h3><p>Leitura de tráfego, protocolos e diagnóstico orientado por evidências.</p></article>
+          <article class="roadmap-card reveal"><span class="roadmap-status">em construção</span><b>04</b><h3>Blue Team & SOC</h3><p>Logs, SIEM, triagem de alertas e resposta responsável a incidentes.</p></article>
+        </div>
+      </div>
+    </section>
+
     <section class="section journey" id="trajetoria">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="eyebrow">04 / Trajetória</p>
+          <p class="eyebrow">06 / Trajetória</p>
           <h2>Experiência e <span>formação.</span></h2>
         </div>
 
@@ -299,7 +350,7 @@ Reply: time=1ms TTL=64
 
     <section class="section contact" id="contato">
       <div class="container contact-inner reveal">
-        <p class="eyebrow">05 / Contato</p>
+        <p class="eyebrow">07 / Contato</p>
         <h2>Vamos construir a próxima<br><span>solução juntos?</span></h2>
         <p>Estou aberto a oportunidades de estágio e posições iniciais em Suporte Técnico, Infraestrutura, Redes e Cibersegurança.</p>
         <div class="contact-actions">
